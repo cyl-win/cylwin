@@ -1,4 +1,4 @@
-// Ñ§Éú³É¼¨¹ÜÀí.cpp : ´ËÎÄ¼ş°üº¬ "main" º¯Êı¡£³ÌĞòÖ´ĞĞ½«ÔÚ´Ë´¦¿ªÊ¼²¢½áÊø¡£
+// å­¦ç”Ÿæˆç»©ç®¡ç†.cpp : æ­¤æ–‡ä»¶åŒ…å« "main" å‡½æ•°ã€‚ç¨‹åºæ‰§è¡Œå°†åœ¨æ­¤å¤„å¼€å§‹å¹¶ç»“æŸã€‚
 // QQ 523857886
 #include<iostream>
 #include<string>
@@ -12,28 +12,28 @@ struct student
     float shuxue=0;
     float yingyu=0;
     float yuwen=0;
-    float avg = 0;//Æ½¾ùÖµ
+    float avg = 0;//å¹³å‡å€¼
 };  
  
 struct data
 {
-    int count=0; // µ±Ç°Ñ§ÉúÊı×éÖĞÑ§ÉúµÄ¸öÊı
-    struct student stu[MAX]; // Ñ§ÉúÊı×é
+    int count=0; // å½“å‰å­¦ç”Ÿæ•°ç»„ä¸­å­¦ç”Ÿçš„ä¸ªæ•°
+    struct student stu[MAX]; // å­¦ç”Ÿæ•°ç»„
 }dd;
  
-// ÏÔÊ¾Ö÷²Ëµ¥
+// æ˜¾ç¤ºä¸»èœå•
 void menu()
 {
     
-    //ÂÔ  ´Ë²¿·ÖÄÚÈİĞèÒªµÄM    Q523857886
+    //ç•¥  æ­¤éƒ¨åˆ†å†…å®¹éœ€è¦çš„M    Q523857886
 }
  
  
-// ²é¿´ËùÓĞÑ§ÉúĞÅÏ¢
+// æŸ¥çœ‹æ‰€æœ‰å­¦ç”Ÿä¿¡æ¯
 void view_data()
 {
     int i;
-    cout << "ĞÕÃû\tÑ§ºÅ\t×¨Òµ\t°à¼¶\tÊıÑ§\tÓ¢Óï\tÓïÎÄ\tÆ½¾ù·Ö";
+    cout << "å§“å\tå­¦å·\tä¸“ä¸š\tç­çº§\tæ•°å­¦\tè‹±è¯­\tè¯­æ–‡\tå¹³å‡åˆ†";
     cout<<"\n-------------------------------------------------------------------\n";
     for (i = 0; i < dd.count; i++)
         cout << dd.stu[i].xingming << "\t" << dd.stu[i].xuehao << "\t" << dd.stu[i].zhuanye << "\t" << dd.stu[i].banji << "\t" << dd.stu[i].shuxue << "\t"
@@ -41,7 +41,7 @@ void view_data()
     cout<<"\n-------------------------------------------------------------------\n";    
 }
  
-// ÊäÈëÑ§Éú¼ÇÂ¼
+// è¾“å…¥å­¦ç”Ÿè®°å½•
 void add_data()
 {
     int b;
@@ -50,8 +50,8 @@ void add_data()
     {
         float tmp;
  
-        cout << "ÇëÊäÈëÑ§ÉúĞÕÃû£º"; cin >> dd.stu[k].xingming;
-        cout << "ÇëÊäÈëÑ§ÉúÑ§ºÅ£º";
+        cout << "è¯·è¾“å…¥å­¦ç”Ÿå§“åï¼š"; cin >> dd.stu[k].xingming;
+        cout << "è¯·è¾“å…¥å­¦ç”Ÿå­¦å·ï¼š";
  
         cin >> tmp; 
         while (!cin)
@@ -59,47 +59,47 @@ void add_data()
             char ch;
             while ((ch = getchar()) != '\n')
                 continue;
-            cout << "ÊäÈëµÄ²»ÊÇÊı×Ö,ÖØĞÂÊäÈë: ";
+            cout << "è¾“å…¥çš„ä¸æ˜¯æ•°å­—,é‡æ–°è¾“å…¥: ";
             cin.clear();
             cin >> tmp;
         }
         dd.stu[k].xuehao = tmp;
  
-        cout << "ÇëÊäÈëÑ§Éú×¨Òµ£º"; cin >> dd.stu[k].zhuanye;
-        cout << "ÇëÊäÈëÑ§Éú°à¼¶£º"; cin >> dd.stu[k].banji; 
+        cout << "è¯·è¾“å…¥å­¦ç”Ÿä¸“ä¸šï¼š"; cin >> dd.stu[k].zhuanye;
+        cout << "è¯·è¾“å…¥å­¦ç”Ÿç­çº§ï¼š"; cin >> dd.stu[k].banji; 
         
  
-        cout << "ÇëÊäÈëÑ§ÉúÊıÑ§£º"; cin >> tmp;
+        cout << "è¯·è¾“å…¥å­¦ç”Ÿæ•°å­¦ï¼š"; cin >> tmp;
         while (!cin)
         {
             char ch;
             while ((ch = getchar()) != '\n')
                 continue;
-            cout << "ÊäÈëµÄ²»ÊÇÊı×Ö,ÖØĞÂÊäÈë: ";
+            cout << "è¾“å…¥çš„ä¸æ˜¯æ•°å­—,é‡æ–°è¾“å…¥: ";
             cin.clear();
             cin >> tmp;
         }      
         dd.stu[k].shuxue =tmp;
  
-        cout << "ÇëÊäÈëÑ§ÉúÓ¢Óï£º"; cin >> tmp;
+        cout << "è¯·è¾“å…¥å­¦ç”Ÿè‹±è¯­ï¼š"; cin >> tmp;
         while (!cin)
         {
             char ch;
             while ((ch = getchar()) != '\n')
                 continue;
-            cout << "ÊäÈëµÄ²»ÊÇÊı×Ö,ÖØĞÂÊäÈë: ";
+            cout << "è¾“å…¥çš„ä¸æ˜¯æ•°å­—,é‡æ–°è¾“å…¥: ";
             cin.clear();
             cin >> tmp;
         }
         dd.stu[k].yingyu = tmp;
  
-        cout << "ÇëÊäÈëÑ§ÉúÓïÎÄ£º"; cin >> tmp; 
+        cout << "è¯·è¾“å…¥å­¦ç”Ÿè¯­æ–‡ï¼š"; cin >> tmp; 
         while (!cin)
         {
             char ch;
             while ((ch = getchar()) != '\n')
                 continue;
-            cout << "ÊäÈëµÄ²»ÊÇÊı×Ö,ÖØĞÂÊäÈë: ";
+            cout << "è¾“å…¥çš„ä¸æ˜¯æ•°å­—,é‡æ–°è¾“å…¥: ";
             cin.clear();
             cin >> tmp;
         }
@@ -110,9 +110,9 @@ void add_data()
      
         
  
-        dd.count++; //ĞèÒªÌáÇ°ÖÃ0£¬ÔÚÖ÷º¯ÊıÖĞ¡£
+        dd.count++; //éœ€è¦æå‰ç½®0ï¼Œåœ¨ä¸»å‡½æ•°ä¸­ã€‚
         k = dd.count;
-        cout<<"\n\n¼ÌĞøÌí¼ÓÑ§ÉúĞÅÏ¢[°´1»Ø³µ¼ÌĞø 0»Ø³µ·µ»Ø£¬ÆäËû»Ø³µÍË³ö]:";
+        cout<<"\n\nç»§ç»­æ·»åŠ å­¦ç”Ÿä¿¡æ¯[æŒ‰1å›è½¦ç»§ç»­ 0å›è½¦è¿”å›ï¼Œå…¶ä»–å›è½¦é€€å‡º]:";
         
         
         cin >> b;
@@ -127,12 +127,12 @@ void add_data()
 }
  
  
-// ĞŞ¸ÄÑ§Éú¼ÇÂ¼
+// ä¿®æ”¹å­¦ç”Ÿè®°å½•
 void edit_data()
 {
     int i, k=-1;
     float  xuehao;
-    cout<<"\nÇëÊäÈëÒªĞŞ¸ÄÑ§ÉúµÄÑ§ºÅ:";
+    cout<<"\nè¯·è¾“å…¥è¦ä¿®æ”¹å­¦ç”Ÿçš„å­¦å·:";
     cin >> xuehao;
  
     while (!cin)
@@ -140,7 +140,7 @@ void edit_data()
         char ch;
         while ((ch = getchar()) != '\n')
             continue;
-        cout << "ÊäÈëµÄ²»ÊÇÊı×Ö,ÖØĞÂÊäÈë: ";
+        cout << "è¾“å…¥çš„ä¸æ˜¯æ•°å­—,é‡æ–°è¾“å…¥: ";
         cin.clear();
         cin >> xuehao;
     }
@@ -155,62 +155,62 @@ void edit_data()
     }
     if (k == -1)
     {
-        cout << "\n\nÃ»ÓĞÕÒµ½¸ÃÑ§Éú(Ñ§ºÅ-"<< xuehao<<")!";
+        cout << "\n\næ²¡æœ‰æ‰¾åˆ°è¯¥å­¦ç”Ÿ(å­¦å·-"<< xuehao<<")!";
     }
     else
     {
-        cout << "ÇëÊäÈë" << xuehao << "Ñ§ÉúĞÕÃû£º"; cin >> dd.stu[k].xingming;
-        cout << "ÇëÊäÈë"<< xuehao <<"Ñ§Éú×¨Òµ£º"; cin >> dd.stu[k].zhuanye;
-        cout << "ÇëÊäÈë" << xuehao << "Ñ§Éú°à¼¶£º"; cin >> dd.stu[k].banji;
+        cout << "è¯·è¾“å…¥" << xuehao << "å­¦ç”Ÿå§“åï¼š"; cin >> dd.stu[k].xingming;
+        cout << "è¯·è¾“å…¥"<< xuehao <<"å­¦ç”Ÿä¸“ä¸šï¼š"; cin >> dd.stu[k].zhuanye;
+        cout << "è¯·è¾“å…¥" << xuehao << "å­¦ç”Ÿç­çº§ï¼š"; cin >> dd.stu[k].banji;
         float tmp;
  
-        cout << "ÇëÊäÈë" << xuehao << "Ñ§ÉúÊıÑ§£º"; cin >> tmp;
+        cout << "è¯·è¾“å…¥" << xuehao << "å­¦ç”Ÿæ•°å­¦ï¼š"; cin >> tmp;
         while (!cin)
         {
             char ch;
             while ((ch = getchar()) != '\n')
                 continue;
-            cout << "ÊäÈëµÄ²»ÊÇÊı×Ö,ÖØĞÂÊäÈë: ";
+            cout << "è¾“å…¥çš„ä¸æ˜¯æ•°å­—,é‡æ–°è¾“å…¥: ";
             cin.clear();
             cin >> tmp;
         }
         dd.stu[k].shuxue = tmp;
  
-        cout << "ÇëÊäÈë" << xuehao << "Ñ§ÉúÓ¢Óï£º"; cin >> tmp;
+        cout << "è¯·è¾“å…¥" << xuehao << "å­¦ç”Ÿè‹±è¯­ï¼š"; cin >> tmp;
         while (!cin)
         {
             char ch;
             while ((ch = getchar()) != '\n')
                 continue;
-            cout << "ÊäÈëµÄ²»ÊÇÊı×Ö,ÖØĞÂÊäÈë: ";
+            cout << "è¾“å…¥çš„ä¸æ˜¯æ•°å­—,é‡æ–°è¾“å…¥: ";
             cin.clear();
             cin >> tmp;
         }
         dd.stu[k].yingyu = tmp;
  
-        cout << "ÇëÊäÈë" << xuehao << "Ñ§ÉúÓïÎÄ£º"; cin >> tmp;
+        cout << "è¯·è¾“å…¥" << xuehao << "å­¦ç”Ÿè¯­æ–‡ï¼š"; cin >> tmp;
         while (!cin)
         {
             char ch;
             while ((ch = getchar()) != '\n')
                 continue;
-            cout << "ÊäÈëµÄ²»ÊÇÊı×Ö,ÖØĞÂÊäÈë: ";
+            cout << "è¾“å…¥çš„ä¸æ˜¯æ•°å­—,é‡æ–°è¾“å…¥: ";
             cin.clear();
             cin >> tmp;
         }
  
         dd.stu[k].yuwen = tmp;
         
-        cout<<"\n\nĞŞ¸ÄÑ§Éú¼ÇÂ¼(Ñ§ºÅ-"<< xuehao <<")³É¹¦!";
+        cout<<"\n\nä¿®æ”¹å­¦ç”Ÿè®°å½•(å­¦å·-"<< xuehao <<")æˆåŠŸ!";
     }
 }
  
-//É¾³ı¼ÇÂ¼
+//åˆ é™¤è®°å½•
 void delete_data()
 {
     int i, k=-1;
     float  xuehao;
-    cout << "\nÇëÊäÈëÒªĞŞ¸ÄÑ§ÉúµÄÑ§ºÅ:";
+    cout << "\nè¯·è¾“å…¥è¦ä¿®æ”¹å­¦ç”Ÿçš„å­¦å·:";
     cin >> xuehao;
  
     while (!cin)
@@ -218,7 +218,7 @@ void delete_data()
         char ch;
         while ((ch = getchar()) != '\n')
             continue;
-        cout << "ÊäÈëµÄ²»ÊÇÊı×Ö,ÖØĞÂÊäÈë: ";
+        cout << "è¾“å…¥çš„ä¸æ˜¯æ•°å­—,é‡æ–°è¾“å…¥: ";
         cin.clear();
         cin >> xuehao;
     }
@@ -227,39 +227,39 @@ void delete_data()
     {
         if (dd.stu[i].xuehao == xuehao)
         {
-            k = i;//ÕÒµ½¼ÇÂ¼ËùÔÚÎ»ÖÃ
+            k = i;//æ‰¾åˆ°è®°å½•æ‰€åœ¨ä½ç½®
             break;
         }
     }
     if (k == -1)
     {
-        cout << "\n\nÃ»ÓĞÕÒµ½¸ÃÑ§Éú(Ñ§ºÅ-" << xuehao << ")!";
+        cout << "\n\næ²¡æœ‰æ‰¾åˆ°è¯¥å­¦ç”Ÿ(å­¦å·-" << xuehao << ")!";
     }
     else
     {
-        for (i = k; i < dd.count - 1; i++)//½«kÎ»ÖÃµÄÊı¾İ±»k+1Î»ÖÃµÄĞÅÏ¢¸²¸Ç
+        for (i = k; i < dd.count - 1; i++)//å°†kä½ç½®çš„æ•°æ®è¢«k+1ä½ç½®çš„ä¿¡æ¯è¦†ç›–
         {
             dd.stu[i] = dd.stu[i + 1];
         }
         dd.count--;
  
-        cout << "\n\nÉ¾³ıÑ§Éú¼ÇÂ¼(Ñ§ºÅ-" << xuehao << ")³É¹¦!";
+        cout << "\n\nåˆ é™¤å­¦ç”Ÿè®°å½•(å­¦å·-" << xuehao << ")æˆåŠŸ!";
     }
 }
  
-//Ñ§ºÅ²éÑ¯³É¼¨ //ĞèÒªÑ§ºÅÊÇÓĞĞòµÄ£¬²»È»ÊµÏÖ²»ÁËÕÛ°ë²éÑ¯
+//å­¦å·æŸ¥è¯¢æˆç»© //éœ€è¦å­¦å·æ˜¯æœ‰åºçš„ï¼Œä¸ç„¶å®ç°ä¸äº†æŠ˜åŠæŸ¥è¯¢
 void qurey_data_xuehao()
 {
     
     float  xuehao;
-    cout << "\nÇëÊäÈëÒªĞŞ¸ÄÑ§ÉúµÄÑ§ºÅ:";
+    cout << "\nè¯·è¾“å…¥è¦ä¿®æ”¹å­¦ç”Ÿçš„å­¦å·:";
     cin >> xuehao;
     while (!cin)
     {
         char ch;
         while ((ch = getchar()) != '\n')
             continue;
-        cout << "ÊäÈëµÄ²»ÊÇÊı×Ö,ÖØĞÂÊäÈë: ";
+        cout << "è¾“å…¥çš„ä¸æ˜¯æ•°å­—,é‡æ–°è¾“å…¥: ";
         cin.clear();
         cin >> xuehao;
     }
@@ -275,7 +275,7 @@ void qurey_data_xuehao()
         mid = (low + high) / 2;
         if (dd.stu[mid].xuehao == xuehao)
         {
-            cout << "ĞÕÃû\tÑ§ºÅ\t×¨Òµ\t°à¼¶\tÊıÑ§\tÓ¢Óï\tÓïÎÄ";
+            cout << "å§“å\tå­¦å·\tä¸“ä¸š\tç­çº§\tæ•°å­¦\tè‹±è¯­\tè¯­æ–‡";
             cout << "\n-------------------------------------------------------------------\n";
  
             cout << dd.stu[mid].xingming << "\t" << dd.stu[mid].xuehao << "\t" << dd.stu[mid].zhuanye << "\t" << dd.stu[mid].banji << "\t" << dd.stu[mid].shuxue << "\t"
@@ -293,7 +293,7 @@ void qurey_data_xuehao()
             low = mid + 1;
         }
     }    
-        cout << "\n\nÃ»ÓĞÕÒµ½¸ÃÑ§Éú(Ñ§ºÅ-" << xuehao << ")!";     
+        cout << "\n\næ²¡æœ‰æ‰¾åˆ°è¯¥å­¦ç”Ÿ(å­¦å·-" << xuehao << ")!";     
 }
  
 void qurey_data_average() 
@@ -302,11 +302,11 @@ void qurey_data_average()
    
     for (i = 0; i < dd.count; i++)   
         dd.stu[i].avg = (dd.stu[i].shuxue + dd.stu[i].yingyu + dd.stu[i].yuwen) / 3;   
-    cout << "\n¼ÆËãÍê±Ï~£¡\n";   
+    cout << "\nè®¡ç®—å®Œæ¯•~ï¼\n";   
     
 }
  
-void sort_data()//ÅÅĞò ¸ù¾İÆ½¾ùÖµÅÅĞò
+void sort_data()//æ’åº æ ¹æ®å¹³å‡å€¼æ’åº
 {
     int i, j, N;
     N = dd.count;
@@ -316,8 +316,8 @@ void sort_data()//ÅÅĞò ¸ù¾İÆ½¾ùÖµÅÅĞò
         {
             if (dd.stu[j].avg < dd.stu[j + 1].avg) 
             { 
-                student tmp; //ÁÙÊ±±äÁ¿
-                tmp = dd.stu[j]; //½»»»
+                student tmp; //ä¸´æ—¶å˜é‡
+                tmp = dd.stu[j]; //äº¤æ¢
                 dd.stu[j] = dd.stu[j + 1];
                 dd.stu[j + 1] = tmp;
             }
@@ -330,12 +330,12 @@ void sort_data()//ÅÅĞò ¸ù¾İÆ½¾ùÖµÅÅĞò
  
 int main() {
     int a;
-    dd.count = 0;//¿ªÊ¼0Ìõ¼ÇÂ¼
+    dd.count = 0;//å¼€å§‹0æ¡è®°å½•
     
     menu();
     cin >> a;
     while (a) {
-       //QQ 523857886
+       //QQ 1109142585
         menu();
         cin >> a;
     }
