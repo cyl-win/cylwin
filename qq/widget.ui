@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1317</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>50</y>
+     <width>601</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTextBrowser" name="textBrowser"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>280</y>
+     <width>601</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>551</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QToolButton" name="toolButton_6">
+       <property name="toolTip">
+        <string>加粗</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photo.qrc">
+         <normaloff>:/new/prefix1/t11.jpg</normaloff>:/new/prefix1/t11.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButton_4">
+       <property name="toolTip">
+        <string>倾斜</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photo.qrc">
+         <normaloff>:/new/prefix1/t13.jpg</normaloff>:/new/prefix1/t13.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>11</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>12</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButton">
+       <property name="toolTip">
+        <string>下划线</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photo.qrc">
+         <normaloff>:/new/prefix1/t7.jpg</normaloff>:/new/prefix1/t7.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFontComboBox" name="fontComboBox"/>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButton_3">
+       <property name="toolTip">
+        <string>颜色</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photo.qrc">
+         <normaloff>:/new/prefix1/t9.jpg</normaloff>:/new/prefix1/t9.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButton_2">
+       <property name="toolTip">
+        <string>保存</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photo.qrc">
+         <normaloff>:/new/prefix1/t11.jpg</normaloff>:/new/prefix1/t11.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="toolButton_5">
+       <property name="toolTip">
+        <string>清空</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="photo.qrc">
+         <normaloff>:/new/prefix1/t13.jpg</normaloff>:/new/prefix1/t13.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>330</y>
+     <width>611</width>
+     <height>214</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>570</y>
+     <width>181</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(190, 255, 183);
+</string>
+   </property>
+   <property name="text">
+    <string>发送</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>570</y>
+     <width>161</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>570</y>
+     <width>81</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>在线人数：</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>60</y>
+     <width>256</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>用户名</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources>
+  <include location="photo.qrc"/>
+ </resources>
+ <connections/>
+</ui>
