@@ -1,0 +1,7 @@
+﻿  tcpsever.cpp
+F:\hellosocket\tcpsever\easytcpsever.hpp(62,11): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“SOCKET”
+F:\hellosocket\tcpsever\easytcpsever.hpp(62,11): message : 请考虑在格式字符串中使用“%lld”
+F:\hellosocket\tcpsever\easytcpsever.hpp(62,11): message : 请考虑在格式字符串中使用“%Id”
+F:\hellosocket\tcpsever\easytcpsever.hpp(62,11): message : 请考虑在格式字符串中使用“%I64d”
+F:\hellosocket\tcpsever\easytcpsever.hpp(140,28): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+  tcpsever.vcxproj -> F:\hellosocket\x64\Debug\tcpsever.exe
